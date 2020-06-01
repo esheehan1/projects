@@ -22,11 +22,13 @@ countries_data
 print(countries_data.head)
 
 countries_data.plot()
-plt.tight_layout()
+
 plt.grid(True)
 plt.legend()
-plt.ylabel('Resturamt Reservations, YoY Change', fontsize = 15) #for y label
+plt.ylabel('YoY Change', fontsize = 15) #for y label
 plt.xlabel('Date', fontsize = 15) #for x label
+plt.suptitle("Resturant Reservations", fontsize=15, fontweight=0, color='black')
+plt.tight_layout()
 plt.show()
 
 
